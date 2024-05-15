@@ -1,0 +1,70 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.almarai-light {
+    font-family: "Almarai", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .almarai-regular {
+    font-family: "Almarai", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .almarai-bold {
+    font-family: "Almarai", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .almarai-extrabold {
+    font-family: "Almarai", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Rawafed';
+    src: url(../assets/fonts/Rawafed.Zainab.otf);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .rawafed{
+    font-family: "Rawafed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .rawafed-bold{
+    font-family: "Rawafed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'djadli';
+    src: url(../assets/fonts/djadli-linearhour.ttf);
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+  .djadli{
+    font-family: "djadli", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
