@@ -30,11 +30,27 @@ window.addEventListener('scroll', function() {
     loop: true,
     fraction: true,
     autoplay: {
+      
       delay: 1200,
       disableOnInteraction: false,
     },
     pagination: {
       el: ".progress-slide-carousel .swiper-pagination",
       type: "progressbar",
+    },
+  });
+
+
+  const swiper2 = new Swiper('.swiper-container2', {
+    slidesPerView: 2.5,
+    spaceBetween: 50,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 1500,
+      disableOnInteraction: false,
     },
   });
