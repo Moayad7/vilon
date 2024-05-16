@@ -12,13 +12,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
 </head>
 
 <body class="bg-[#f1f0eb] almarai-regular">
     <header class=" ">
         <nav class="flex justify-center border-b border-[#dec5af] bg-[#231f2055] absolute w-full h-20 lg:h-auto top-0 z-[99999]">
             <div class="z-[9] w-40 absolute flex justify-center my-4">
-                <a href="index.html" class="w-32 lg:-translate-x-[10px]">
+                <a href="index.html" class="w-32 translate-x-[10px] lg:-translate-x-[10px]">
                     <img width="100%" height="100%" src="assets/images/logo/logo_white.png" alt="logo">
                 </a>
         </div>
@@ -149,13 +153,13 @@
 <!-- team section -->
         <div class=" p-16 grid relative overflow-hidden lg:grid-cols-12 bg-[#dec5af] ">
             
-            <div class="lg:col-span-4  w-full lg:h-full w-full flex items-center justify-center overflow-hidden z-[99]">
+            <div class="lg:col-span-5  w-full lg:h-full w-full flex items-center justify-center overflow-hidden z-[99]">
                 <img class="" width="100%" height="100%" src="assets/images/team-01.webp" alt="team">
             </div>
             <!-- <div class="lg:w-[650px] lg:h-[350px] flex items-center justify-center overflow-hidden">
                 <img class="" width="100%" height="100%" src="assets/images/team-01.webp" alt="team">
             </div> -->
-            <div class="lg:col-span-8 px-8 lg:px-32 flex flex-col justify-center items-center text-center gap-10 ">
+            <div class="lg:col-span-7 px-8 lg:px-32 flex flex-col justify-center items-center text-center gap-10 ">
                 <p class="  text-[#231f20] text-8xl djadli text-center">نملك فريقاً مميزاً</p>
                 <p class="  text-[#231f20] text-2xl text-center">في [عيادة التجميل [فيلون]], نهتم بتقديم أعلى مستوى من العلاجات التجميلية لمساعدتك على الاطلاع على أنفسك والشعور بأفضلك. فريقنا من المهنيين المؤهلين والمؤهلين يتمتع بخبرة كبيرة في تقديم العلاجات التجميلية الشخصية لكل مريض.</p>
                 <p class="  text-[#231f20] text-2xl">فريقنا يمتلك الخبرات العديدة من أجل الحفاظ على صحتك والعناية بك وتقديم الخدمات
@@ -167,9 +171,52 @@
 
         <!-- services section -->
         <div>
-            <div>
-                <h1 class="djadli">خدماتنا</h1>
+            <div class="p-16 grid place-items-center">
+                <p class="djadli text-2xl lg:text-8xl">خدماتنا</p>
+                <p class="text-xl lg:w-1/3 text-center">"خدماتنا في عيادة التجميل تشمل تلميع الأظافر، تجميل البشرة، تش حاسب الجدول والحجز والتنظيم للمواعيد والمعاملات الجمالية الأخرى."
+                </p>
             </div>
+            <!-- <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Slide 1</div>
+                  <div class="swiper-slide">Slide 2</div>
+                  <div class="swiper-slide">Slide 3</div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div> -->
+              <div class="w-full relative">
+                <div class="swiper progress-slide-carousel swiper-container relative">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="bg-[#f7ede3] rounded-2xl h-96 flex justify-center items-center">
+                        <div class="text-center">
+                          <h2 class="text-3xl font-semibold text-[#dec5af]">خدمة 1</h2>
+                          <p class="text-gray-600">خدماتنا في عيادة التجميل تشمل تلميع الأظافر، تجميل البشرة</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="bg-[#f7ede3] rounded-2xl h-96 flex justify-center items-center">
+                        <div class="text-center">
+                          <h2 class="text-3xl font-semibold text-[#dec5af]">خدمة 2</h2>
+                          <p class="text-gray-600">خدماتنا في عيادة التجميل تشمل تلميع الأظافر، تجميل البشرة</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="bg-[#f7ede3] rounded-2xl h-96 flex justify-center items-center">
+                        <div class="text-center">
+                          <h2 class="text-3xl font-semibold text-[#dec5af]">خدمة 3</h2>
+                          <p class="text-gray-600">خدماتنا في عيادة التجميل تشمل تلميع الأظافر، تجميل البشرة</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination !bottom-2 !top-auto !w-80 right-0 mx-auto bg-gray-100"></div>
+                </div>
+              </div>
         </div>
 
 
@@ -183,8 +230,10 @@
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/tailwind-3.4.3.js"></script>
+
 </body>
 
 </html>
