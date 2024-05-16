@@ -31,7 +31,7 @@ window.addEventListener('scroll', function() {
     fraction: true,
     autoplay: {
       
-      delay: 1200,
+      delay: 2200,
       disableOnInteraction: false,
     },
     pagination: {
