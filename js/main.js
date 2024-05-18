@@ -1,3 +1,6 @@
+AOS.init();
+
+
 const header = document.getElementById('navbar');
 
 window.addEventListener('scroll', function() {
