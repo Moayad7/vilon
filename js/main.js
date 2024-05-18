@@ -27,6 +27,8 @@ window.addEventListener('scroll', function() {
   // });
 
   var swiper = new Swiper(".progress-slide-carousel", {
+    slidesPerView: 4.5,
+    spaceBetween: 30,
     loop: true,
     fraction: true,
     autoplay: {
