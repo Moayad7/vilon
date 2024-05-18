@@ -21,6 +21,9 @@
 <body class="bg-[#f1f0eb] almarai-regular">
     <header class=" ">
         <nav class="flex justify-center border-b border-[#dec5af] bg-[#231f2055] absolute w-full h-20 lg:h-auto top-0 z-[99999]">
+          <span class="material-symbols-outlined text-[#f1f0eb] text-4xl absolute top-5 right-3">
+            menu_open
+            </span>
             <div class="z-[9] w-40 absolute flex justify-center my-4">
                 <a href="index.html" class="w-32 translate-x-[10px] lg:-translate-x-[10px]">
                     <img width="100%" height="100%" src="assets/images/logo/logo_white.png" alt="logo">
@@ -57,6 +60,9 @@
 
 
         <nav id="navbar" class=" -translate-y-[500px] flex justify-center fixed w-full top-0 duration-500 bg-[#dec5af] shadow-lg z-[99999]">
+          <span class="material-symbols-outlined text-[#231f20] text-4xl absolute top-5 right-3">
+            menu_open
+            </span>
             <!-- <div class="z-[9] absolute flex justify-center my-4">
             
         </div> -->
@@ -86,11 +92,42 @@
                     <li class=" text-[#231f20] hover:text-[#000] duration-200"><a href="services.html">الخدمات</a></li>
                     <li class=" text-[#231f20] hover:text-[#000] duration-200"><a href="#">اتصل بنا</a></li>
                 </ul>
+                
             </div>
         </nav>
+
+        
     </header>
 
-
+    <nav class="hidden  relative top-0 z-[99999] grid w-full bg-gradient-to-b from-[#231f20] to-[#dec5af11] bg-[#231f20] py-12 gap-6">
+      <span class="material-symbols-outlined text-[#f1f0eb] text-4xl absolute top-2 right-2">
+        close
+        </span>
+      <a href="index.html" class="">
+        <img class="px-24" width="100%" height="100%" src="assets/images/logo/logo_white.png" alt="logo">
+    </a>
+      <ul class="grid lg:hidden items-center gap-6 text-center">
+        <li class=" text-[#f1f0eb] hover:text-[#dec5af] duration-200"><a href="index.html">الرئيسية</a></li>
+        <li class=" text-[#f1f0eb] hover:text-[#dec5af] duration-200"><a href="#">نبذة عنا</a></li>
+        <li class=" text-[#f1f0eb] hover:text-[#dec5af] duration-200"><a href="services.html">الخدمات</a></li>
+        <li class=" text-[#f1f0eb] hover:text-[#dec5af] duration-200"><a href="#">اتصل بنا</a></li>
+    </ul>
+    <ul class="flex  justify-center gap-3 text-xl">
+      <!-- <li><a href="#"
+              class=" border-2 border-[#dec5af] hover:bg-[#dec5af] duration-200 text-[#231f20] hover:text-[#231f20] px-10 py-4 ">احجز
+              موعد</a></li> -->
+      <li><a href="#"
+              class="border-2 border-[#dec5af] hover:bg-[#dec5af] duration-200 text-[#f1f0eb] hover:text-[#231f20] p-3  items-end flex"><span
+                  class=" material-symbols-outlined">
+                  mail
+              </span></a></li>
+      <li><a href="#"
+              class="border-2 border-[#dec5af] hover:bg-[#dec5af] duration-200 text-[#f1f0eb] hover:text-[#231f20] p-3  items-end flex"><span
+                  class=" material-symbols-outlined">
+                  call
+              </span></a></li>
+  </ul>
+    </nav>
 
     <main class="">
         <div id="hero" class="bg-[url('assets/images/hero-bg.jpg')]  bg-center h-screen ">
@@ -152,9 +189,9 @@
 
 
 <!-- team section -->
-        <div class=" py-16 lg:p-16 grid relative overflow-hidden lg:grid-cols-12 bg-[#dec5af] ">
+        <div class=" pt-16 lg:p-16 grid relative overflow-hidden lg:grid-cols-12 bg-[#dec5af] ">
             
-            <div class="lg:col-span-5  w-full lg:h-[350px] w-full flex items-center justify-center overflow-hidden z-[99]">
+            <div class="lg:col-span-5  w-full lg:h-[350px] w-full flex items-center justify-center overflow-hidden z-[99] pt-16 order-last lg:order-first">
                 <img class="" width="100%" height="100%" src="assets/images/hero-bg.jpg" alt="team">
             </div>
             <!-- <div class="lg:w-[650px] lg:h-[350px] flex items-center justify-center overflow-hidden">
@@ -179,7 +216,7 @@
                 <p class=" lg:w-1/3 text-center">"خدماتنا في عيادة التجميل تشمل تلميع الأظافر، تجميل البشرة، تش حاسب الجدول والحجز والتنظيم للمواعيد والمعاملات الجمالية الأخرى."
                 </p>
             </div>
-            <div class="grid grid-cols-2 lg:grid-cols-3 px-32">
+            <div class="grid grid-cols-2 lg:grid-cols-3 lg:px-32">
                 <div class="swiper-slide bg-[url('assets/images/1.webp')] bg-cover bg-center">
                   <div class="bg-[#231f2088] hover:bg-[#231f20cc] duration-500 h-[350px] flex justify-center items-center">
                     <div class="text-center flex flex-col gap-2">
@@ -476,8 +513,8 @@
 
     </main>
 
-    <div class=" ">
-      <a class="z-[999999] shadow fixed bottom-10 right-10 bg-[#231f20] w-12 h-12 rounded-full grid p-3 place-items-center text-[#ded0c5] " href=""><img src="assets/images/socialMedia/5305166_call_chat_mobile_whatsapp_whatsapp logo_icon.svg" alt=""></a>
+    <div class="lg:opacity-80 lg:hover:opacity-100 duration-200">
+      <a class="z-[999999] shadow fixed bottom-6 right-6 lg:bottom-10 lg:right-10  bg-[#231f20] w-12 h-12 rounded-full grid p-3 place-items-center text-[#ded0c5] " href=""><img src="assets/images/socialMedia/5305166_call_chat_mobile_whatsapp_whatsapp logo_icon.svg" alt=""></a>
     </div>
 
 
