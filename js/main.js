@@ -1,6 +1,35 @@
 AOS.init();
 
 
+var toggle = document.getElementById("navbar-toggler");
+var toggle1 = document.getElementById("navbar-toggler1");
+var toggle2 = document.getElementById("navbar-toggler2");
+
+toggle.onclick = function () {
+  Menu();
+};
+
+toggle1.onclick = function () {
+  Menu();
+};
+
+toggle2.onclick = function () {
+  Close();
+};
+
+function Menu() {
+  let list = document.getElementById("navbar_list");
+    list.classList.add("-left-[0px]");
+    list.classList.remove("-left-[2080px]");
+}
+
+function Close() {
+  let list = document.getElementById("navbar_list");
+    list.classList.add("-left-[2080px]");
+    list.classList.remove("-left-[0px]");
+}
+
+
 const header = document.getElementById('navbar');
 
 window.addEventListener('scroll', function() {

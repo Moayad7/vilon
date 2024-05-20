@@ -29,10 +29,10 @@
   
 
   
-  <header class=" ">
+  <header class="overflow-hidden ">
     <nav
       class="flex justify-center border-b border-[#dec5af] bg-[#231f2055] absolute w-full h-20 lg:h-auto top-0 z-[99999]">
-      <span class="block lg:hidden material-symbols-outlined text-[#f1f0eb] text-3xl lg:text-4xl absolute top-5 right-3">
+      <span id="navbar-toggler" class="z-[9999] lg:hidden material-symbols-outlined text-[#f1f0eb] text-3xl lg:text-4xl absolute top-5 right-3">
         menu
       </span>
       <div class="z-[9] w-40 absolute flex justify-center my-4">
@@ -72,7 +72,7 @@
 
     <nav id="navbar"
       class=" -translate-y-[500px] flex justify-center fixed w-full top-0 duration-500 bg-[#dec5af] shadow-lg z-[99999]">
-      <span class="block lg:hidden material-symbols-outlined text-[#231f20] text-3xl lg:text-4xl absolute top-5 right-3">
+      <span id="navbar-toggler1" class="z-[9999] lg:hidden material-symbols-outlined text-[#231f20] text-3xl lg:text-4xl absolute top-5 right-3">
         menu
       </span>
       <!-- <div class="z-[9] absolute flex justify-center my-4">
@@ -108,12 +108,9 @@
       </div>
     </nav>
 
-
-  </header>
-
-  <nav
-    class="hidden  relative top-0 z-[99999] grid w-full bg-gradient-to-b from-[#231f20] to-[#dec5af11] bg-[#231f20] py-12 gap-6">
-    <span class="material-symbols-outlined text-[#f1f0eb] text-4xl absolute top-2 right-2">
+    <nav id="navbar_list"
+    class="-left-[2080px] duration-500 fixed  z-[99999]  grid w-full bg-gradient-to-b from-[#231f20] to-[#dec5af11] bg-[#231f20] py-12 gap-6">
+    <span id="navbar-toggler2" class="material-symbols-outlined text-[#f1f0eb] text-4xl absolute top-2 right-2">
       close
     </span>
     <a href="index.html" class="">
@@ -141,6 +138,10 @@
           </span></a></li>
     </ul>
   </nav>
+
+  </header>
+
+  
 
   <main class="">
     <div id="hero" class="bg-[url('assets/images/hero-bg.jpg')]  bg-center h-screen ">
@@ -393,42 +394,6 @@
                 </div>
               </div>
             </div>
-
-            <!-- <div class="  lg:h-full h-32 grid place-items-center group relative">
-              <div
-                class="bg-[#231f20] lg:bg-[#dec5af] group-hover:bg-[#231f20] relative  w-full h-full  grid place-items-center duration-500 ">
-                <span class="material-symbols-outlined invisible lg:visible group-hover:invisible text-4xl">
-                  link
-                </span>
-                <div
-                  class=" w-full h-full flex flex-col justify-center items-center absolute top-0 right-0  duration-500">
-                  <span
-                    class="material-symbols-outlined visible lg:hidden group-hover:invisible text-4xl text-[#dec5af]">
-                    link
-                  </span>
-                  <p class="lg:invisible group-hover:visible text-[#ded0c5]">رابط</p>
-                  <p class="lg:invisible group-hover:visible text-[#ded0c5]">www.vilon.com</p>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- <div class="  lg:h-full h-32 grid place-items-center group relative">
-              <div
-                class="bg-[#231f20] lg:bg-[#dec5af] group-hover:bg-[#231f20] relative  w-full h-full  grid place-items-center duration-500 ">
-                <span class="material-symbols-outlined invisible lg:visible group-hover:invisible text-4xl">
-                  link
-                </span>
-                <div
-                  class=" w-full h-full flex flex-col justify-center items-center absolute top-0 right-0  duration-500">
-                  <span
-                    class="material-symbols-outlined visible lg:hidden group-hover:invisible text-4xl text-[#dec5af]">
-                    link
-                  </span>
-                  <p class="lg:invisible group-hover:visible text-[#ded0c5]">رابط</p>
-                  <p class="lg:invisible group-hover:visible text-[#ded0c5]">www.vilon.com</p>
-                </div>
-              </div>
-            </div> -->
           </div>
 
           <div class="flex justify-center items-center " data-aos="fade-up"
@@ -476,16 +441,15 @@
 
   <footer>
     <div class="bg-[#231f20] ">
-      <div class="grid lg:grid-cols-12 bg-gradient-to-b from-[#231f20] to-[#dec5af22] py-8 lg:py-0">
-        <div class="col-span-3 h-80 overflow-hidden hidden lg:block relative">
+      <div class="flex lg:grid-cols-12 bg-gradient-to-b from-[#231f20] to-[#dec5af22] py-8 lg:py-0 items-center">
+        <div class=" h-40 overflow-hidden hidden lg:block relative flex justify-center items-center">
           <img class="-translate-y-12" src="assets/images/hero-bg.jpg" alt="">
-          <div class="w-full h-full absolute "></div>
         </div>
-        <div class="col-span-9 px-16 pt-16 flex flex-col justify-center items-center gap-8">
-          <div class="   flex justify-center items-center gap-8">
+        <div class="px-16 pt-4 w-full flex flex-col justify-center items-center">
+          <div class="flex justify-between w-full">
 
-            <div class="grid lg:flex gap-16 items-start">
-              <div class="flex flex-col justify-center gap-4">
+            <div class="grid lg:flex gap-16 items-between w-full justify-between">
+              <!-- <div class="flex flex-col justify-center gap-4">
                 <p class="text-xl text-[#dec5af] whitespace-nowrap">روابط سريعة</p>
                 <ul>
                   <li class="text-[#f7ede3] hover:text-[#dec5af] duration-200"><a href="">الرئيسية</a></li>
@@ -503,7 +467,7 @@
                   <li class="text-[#f7ede3] hover:text-[#dec5af] duration-200"><a href="">الخدمة 4</a></li>
                   <li class="text-[#f7ede3] hover:text-[#dec5af] duration-200"><a href="">الخدمة 5</a></li>
                 </ul>
-              </div>
+              </div> -->
               <div class="flex flex-col justify-center gap-4">
                 <p class="text-xl text-[#dec5af] whitespace-nowrap ">التواصل الاجتماعي</p>
                 <ul class="flex gap-2">
@@ -515,18 +479,19 @@
                         src="assets/images/socialMedia/Snapchat.svg" alt=""></a></li>
                 </ul>
               </div>
-              <div class="order-first lg:order-last">
-                <img class="w-full lg:h-40 py-4 lg:py-auto" src="assets/images/logo/VILON-05.png" alt="logo-footer">
-              </div>
+              
+            </div>
+            <div class="order-first lg:order-last ">
+              <img class="w-60  py-4 lg:py-auto" src="assets/images/logo/VILON-05.png" alt="logo-footer">
             </div>
           </div>
 
-          <hr>
 
           <div class="lg:flex justify-center items-center text-[#f1f0eb] gap-4 text-center">
             <p> جميع الحقوق محفوظة لدى عيادة ڤيلون</p>
           </div>
         </div>
+        
       </div>
     </div>
   </footer>
