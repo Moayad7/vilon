@@ -80,3 +80,18 @@ window.addEventListener('scroll', function() {
       disableOnInteraction: false,
     },
   });
+
+
+
+  // script.js
+document.addEventListener("DOMContentLoaded", () => {
+  // Simulate an API request or any async operation
+  setTimeout(() => {
+      hideLoader();
+  }, 3000); // Replace with your actual data loading logic and time
+
+  function hideLoader() {
+      const loader = document.getElementById("preloader");
+      loader.classList.add("-translate-y-[2000px]");
+  }
+});
